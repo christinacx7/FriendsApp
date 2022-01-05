@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity">
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="First Name"
+            android:padding="10dip"/>
+        <EditText
+            android:id="@+id/input_fname"
+            android:layout_width="140dp"/>
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Last Name"
+            android:padding="10dip"/>
+        <EditText
+            android:id="@+id/input_lname"
+            android:layout_width="140dp"/>
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Email"
+            android:padding="10dip"/>
+        <EditText
+            android:id="@+id/input_email"
+            android:layout_width="140dp"/>
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        android:gravity="center"
+        android:paddingTop="50dip"
+        <Button
+            android:onClick="goback"
+            android:text="Go Back"
+            android:layout_margin="10dp"/>
+        <Button
+            android:onClick="add"
+            android:text="Add"
+            android:layout_margin="10dp"/>
+    </TableRow>
+</TableLayout>

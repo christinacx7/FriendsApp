@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableRow
+        android:id="@+id/tableRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_first">
+
+        <TextView
+            android:id="@+id/fname"
+            android:padding="10dip"
+            android:text=""
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="30sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow2">
+
+        <TextView
+            android:id="@+id/emailview"
+            android:padding="10dip"
+            android:text=""
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="30sp" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow">
+
+        <TextView
+            android:id="@+id/lname"
+            android:padding="10dip"
+            android:text=""
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="30sp" />
+    </TableRow>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.FriendsApp.AppBarOverlay"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/textview_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:text="@string/hello_first_fragment"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_first"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/emailText"
+        android:layout_width="185dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_first"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_first"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="212dp"
+        android:onClick="search"
+        android:text="@string/search"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.971" />
+
+    <Button
+        android:id="@+id/button_friends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="212dp"
+        android:text="Show Friends"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.855" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/appBarLayout"
+        app:popupTheme="@style/Theme.FriendsApp.PopupOverlay" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

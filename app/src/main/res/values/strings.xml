@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Friends App</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label"></string>
+    <string name="second_fragment_label"></string>
+    <string name="search">Search</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Enter Email</string>
+    <string name="hello_second_fragment"></string>
+    <string name="button_back">Go Back</string>
+</resources>
